@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Client Dashboard</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Client Dashboard</div>
+        <!-- Hamburger icon for mobile view -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Navigation links container -->
+        <nav id="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">Dev</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Projects</a>
+        </nav>
+        <!-- Dark Mode Toggle Button -->
+        <button id="toggle-theme">Toggle Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <button>Archive Projects</button>
+            <button>Completed Projects</button>
+            <button>Project Assignments</button>
+        </aside>
+
+        <main class="content">
+            <section class="progress-section">
+                <div class="card">
+                    <h2>Development Progress</h2>
+                    <p>65% Complete</p>
+                </div>
+                <div class="card">
+                    <h2>Project Overview</h2>
+                    <p>Completion Status</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%;"></div>
+                    </div>
+                    <div class="report">
+                        <p><strong>Bug Reports:</strong> 2 open issues</p>
+                        <button id="button-r">View</button>
+                    </div>
+                    <div id="bottomEl">
+                        <h3>Latest Features Added</h3>
+                        <ul>
+                            <li>User authentication implemented</li>
+                            <li>Dashboard layout completed</li>
+                            <li>Progress tracking added</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="client-view">
+                <h2>Client View</h2>
+                <div class="drag-drop-area">
+                    <p>Drag and drop elements to customize layout</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
